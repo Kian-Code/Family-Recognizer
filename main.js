@@ -37,31 +37,23 @@ function GotResult(error , results)
        console.log(results);
        document.getElementById("Result_Emotion_Name_1").innerHTML = results[0].label;
        document.getElementById("Result_Emotion_Name_2").innerHTML = results[1].label;
-       if (results[0].label == "Happy") {
-           document.getElementById("Update_Emoji_1").innerHTML = "😀";
+       if (results[0].label == "Mom") {
+           document.getElementById("Update_Emoji_1").innerHTML = "Mom";
        }
 
-       if (results[0].label == "Sad") {
-        document.getElementById("Update_Emoji_1").innerHTML = "🙁";
+       if (results[0].label == "Dad") {
+        document.getElementById("Update_Emoji_1").innerHTML = "Dad";
        }
 
-       if (results[0].label == "Angry") {
-        document.getElementById("Update_Emoji_1").innerHTML = "😡";
-    }
 
 
 
-
-    if (results[1].label == "Happy") {
-           document.getElementById("Update_Emoji_2").innerHTML = "😀";
+    if (results[1].label == "Mom") {
+           document.getElementById("Update_Emoji_2").innerHTML = "Mom";
        }
 
-       if (results[1].label == "Sad") {
-        document.getElementById("Update_Emoji_2").innerHTML = "🙁";
+       if (results[1].label == "Dad") {
+        document.getElementById("Update_Emoji_2").innerHTML = "Dad";
        }
-
-       if (results[1].label == "Angry") {
-        document.getElementById("Update_Emoji_2").innerHTML = "😡";
-    }
    }
 }
